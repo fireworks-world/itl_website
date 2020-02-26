@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.625;
+  color: #777777;
+}
+
+:root {
+  --primary_color: #cc003a;
+  --color: #7d1230;
+}
+.bg-theme {
+  background-color: var(--primary_color);
+}
+.theme-color {
+  color: var(--primary_color);
+}
+p {
+  letter-spacing: 1px;
+}
+.btn_color {
+  background-color: var(--primary_color);
+  color: #ffffff;
+  border-color: var(--primary_color);
+  font-size: 16px;
+  padding: 6px 12px;
+}
+
+.bg-img {
+  background-image: url("../images/slider.png");
+  background-color: yellow;
+  height: 580px;
+  widows: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*="col"] {
+  margin-bottom: 1rem;
+}
+
+.navbar .dropdown-menu {
+  border: none;
+  background-color: ffffff !important;
+  margin-top: 45px;
+}
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+  /* remove the padding from the navbar so the dropdown hover state is not broken */
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+  .navbar .nav-item {
+    padding: 0.5rem 0.5rem;
+    margin: 0 0.25rem;
+  }
+
+  /* makes the dropdown full width  */
+  .navbar .dropdown {
+    position: static;
+  }
+
+  .navbar .dropdown-menu {
+    width: 100%;
+    left: 0;
+    right: 0;
+    /*  height of nav-item  */
+    top: 45px;
+  }
+
+  /* shows the dropdown menu on hover */
+  .navbar .dropdown:hover .dropdown-menu,
+  .navbar .dropdown .dropdown-menu:hover {
+    display: block !important;
+  }
+
+  .navbar .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+
+  .container-item {
+    margin-bottom: 20rem;
+  }
+}
+
+.serviceButton {
+  margin-left: 20%;
+  width: 60%;
+  margin-right: 20%;
+}
+.serviceCardIcon {
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 5%;
+}
+.tagline {
+  background-image: linear-gradient(
+    to right,
+    var(--primary_color),
+    var(--color)
+  );
+  height: 80px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+}
+.social-media-icon {
+  margin-left: 50px;
+}
+.fab {
+  padding: 14px;
+  font-size: 14px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 3px;
+  border-radius: 50%;
+  border: 2px solid silver;
+  color: silver;
+}
+
+.fab:hover {
+  background: #3b5998;
+  color: #ffffff;
+  border: 2px solid #3b5998;
+}
+.copyright {
+  height: 64px;
+  background: silver;
+  padding: 20px;
+}
+.our_servic_heading {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.address {
+  margin: 10% 0% 0% 0%;
+}
+
+.service-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+.service-list ul li {
+  display: block;
+  color: #000;
+  padding: 4px 17px;
+  text-decoration: none;
+}
+.service-list ul a li:hover {
+  color: var(--primary_color);
+}
+.info p {
+  font-size: 12px;
+}
+.our_servic_heading {
+  font-size: 24px;
+  font-weight: 400;
+}
+.service-list ul li {
+  font-size: 13px;
+}
+.address ul li span {
+  font-size: 14px;
+}
+/* .footer {
+  background-image: url(/images/footer-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+.footer {
+  background-color: #fbfbfb;
+}
+
+.service-nav h5 {
+  font-size: 14px;
+  color: grey;
+}
+.service-nav p {
+  margin-left: 10px;
+}
+.service-nav ul {
+  list-style-type: none;
+
+  padding: 0;
+  margin-top: -10px;
+  margin-left: 30px;
+}
+.service-nav ul li {
+  color: black;
+  font-size: 14px;
+  width: 50%;
+}
+
+.service-nav ul li span {
+  margin-left: 10%;
+  display: none;
+}
+.service-nav ul li:hover {
+  color: #0062cc;
+  background: #e9ecef;
+  padding: 4px;
+  font-size: 15px;
+}
+.service-nav ul li:hover span {
+  color: 0062cc;
+  margin-left: 10%;
+  display: inline;
+}
+.service-nav ul a {
+  text-decoration: none;
+}
+.hvr-icon-wobble-horizontal {
+  display: inline !important;
+}
+.sevice-nav-side p {
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.sevice-nav-side {
+  margin-top: 20px;
+}
+.sevice-nav-side ul {
+  margin: 0;
+}
+.sevice-nav-side a {
+  text-decoration: none;
+  color: black;
+}
+.sevice-nav-side a span {
+  margin-left: 20%;
+  display: none;
+}
+.sevice-nav-side a:hover {
+  color: #0062cc;
+  background: #e9ecef;
+  padding: 4px;
+  font-size: 15px;
+}
+.sevice-nav-side a:hover span {
+  color: 0062cc;
+  margin-left: 10%;
+  display: inline;
+}
+
+.entry-title {
+  padding: 0;
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #000;
+}
+a:hover {
+  text-decoration: none !important;
+}
+.entry-title:hover {
+  color: var(--primary_color);
+}
+.entry-button {
+  color: #777777;
+  text-decoration: none;
+}
+.entry-button:hover {
+  text-decoration: underline !important;
+  color: #000;
+}
+.date {
+  color: #ffffff;
+  width: 59px;
+  background: var(--primary_color);
+  height: 67px;
+  position: absolute;
+  top: 29px;
+  left: 37px;
+  z-index: 999;
+  font-size: 20px;
+  font-weight: 600;
+}
